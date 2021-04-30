@@ -1,0 +1,16 @@
+[
+        {
+            "id": 118,
+            "email": "abdallah.saleh@reqres.in",
+            "first_name": "Abdallah",
+            "last_name": "Saleh",
+            "avatar": "https://reqres.in/img/faces/1-image.jpg"
+        },
+        {
+            "id": 119,
+            "email": "noha.thaher@reqres.in",
+            "first_name": "Noha",
+            "last_name": "Thaher",
+            "avatar": "https://reqres.in/img/faces/2-image.jpg"
+        }
+]
