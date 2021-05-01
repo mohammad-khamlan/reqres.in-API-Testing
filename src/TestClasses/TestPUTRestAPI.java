@@ -33,7 +33,7 @@ public class TestPUTRestAPI {
 	public void testUpdateUser() throws Exception {
 		// Open Connection --- HttpURLConnection
 		String userID = "1";
-		HttpURLConnection connection = RestClientHandler.connectServer(URLs.usersInfo + userID, HTTPMethod.GET,
+		HttpURLConnection connection = RestClientHandler.connectServer(URLs.usersInfo + userID, HTTPMethod.PUT,
 				HTTPRequestsContentTypes.JSON);
 		// Prepare Json Object
 		JSONObject resquestJSONObject = JSONUtils.readJSONObjectFromFileAndReturnJSON(FilesPaths.UpdateUserJSONFile);
@@ -58,7 +58,7 @@ public class TestPUTRestAPI {
 	public void testUpdateUserDoesntExist() throws Exception {
 		// Open Connection --- HttpURLConnection
 		String url = URLs.usersInfo+"510";
-		HttpURLConnection connection = RestClientHandler.connectServer(url, HTTPMethod.GET,
+		HttpURLConnection connection = RestClientHandler.connectServer(url, HTTPMethod.PUT,
 				HTTPRequestsContentTypes.JSON);
 		// Prepare Json Object
 		JSONObject resquestJSONObject = JSONUtils.readJSONObjectFromFileAndReturnJSON(FilesPaths.UpdateUserDoesntExist);
@@ -74,7 +74,7 @@ public class TestPUTRestAPI {
 	public void testUpdateWithoutData() throws Exception {
 		// 1. Open Connection --- HttpURLConnection
 		String url = URLs.usersInfo+"1";
-		HttpURLConnection connection = RestClientHandler.connectServer(url, HTTPMethod.GET,
+		HttpURLConnection connection = RestClientHandler.connectServer(url, HTTPMethod.PUT,
 				HTTPRequestsContentTypes.JSON);
 		// 2. Prepare Json Object
 //		JSONObject resquestJSONObject = JSONUtils.readJSONObjectFromFileAndReturnJSON(FilesPaths.UpdateUserJSONFile);

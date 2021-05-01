@@ -9,7 +9,7 @@ import org.junit.runners.Suite;
 
 @RunWith(Suite.class)
 @Suite.SuiteClasses({
-		
+
 	TestGetRestAPI.class,
 	TestPostRestAPI.class,
 	TestPUTRestAPI.class,

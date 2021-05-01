@@ -49,7 +49,7 @@ public class TestPOSTRegister {
 	
 	
 	@Test
-	public void testRegisterWithoutpassword() throws Exception {
+	public void testRegisterWithoutpasswordOrEmail() throws Exception {
 		// Open Connection --- HttpURLConnection
 		HttpURLConnection connection = RestClientHandler.connectServer(URLs.userRegisteration, HTTPMethod.POST,
 						HTTPRequestsContentTypes.JSON);
