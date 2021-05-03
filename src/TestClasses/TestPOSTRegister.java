@@ -33,7 +33,7 @@ public class TestPOSTRegister {
 	}
 
 	
-	@Test (expected = IOException.class)
+	@Test
 	public void testRegisterWithInvalidUser() throws Exception {
 		// Open Connection --- HttpURLConnection
 		HttpURLConnection connection = RestClientHandler.connectServer(URLs.userRegisteration, HTTPMethod.POST,

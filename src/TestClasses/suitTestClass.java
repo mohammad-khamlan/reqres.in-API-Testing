@@ -13,8 +13,8 @@ import org.junit.runners.Suite;
 	TestGetRestAPI.class,
 	TestPostRestAPI.class,
 	TestPUTRestAPI.class,
-//	TestDELETERestAPI.class,
-//	TestPOSTRegister.class	
+	TestDELETERestAPI.class,
+	TestPOSTRegister.class	
 })
 
 public class suitTestClass {}

@@ -58,4 +58,17 @@ public class TestDELETERestAPI {
 		assertTrue("Failed to delete data !", connection.getResponseCode() != 204);	
 	}
 	
+	
+	@Test 
+	public void testDELETEWithoutID() throws Exception {
+		// 1. Open Connection --- HttpURLConnection
+		HttpURLConnection connection = RestClientHandler.connectServer(URLs.usersInfo , HTTPMethod.DELETE,
+				HTTPRequestsContentTypes.JSON);
+		// 3. DELETE Request
+		connection.addRequestProperty("User-Agent", "Mozella/4.0 (compatible; MSIE 6.0; windows NT 5.0)");
+		RestClientHandler.sendDelete(connection, "", HTTPRequestsContentTypes.JSON);
+		// validation D Response Code
+		assertTrue("No user to delete data !", connection.getResponseCode() != 204);	
+	}
+
 }
